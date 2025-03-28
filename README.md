@@ -43,20 +43,23 @@ Once imported, the `iran_ips` address list can be referenced in firewall rules. 
 
 #### Example 1: Mangle Rule to Mark Packets
 Mark packets from Iranian IPs for QoS or monitoring:
-```routeros
+```routeros 
 /ip firewall mangle add chain=prerouting src-address-list=iran_ips action=mark-packet new-packet-mark=iran_traffic passthrough=no comment="Mark packets from Iran"
-Example 2: Mangle Rule for Routing
+```
+#### Example 2: Mangle Rule for Routing 
 Mark traffic to Iranian IPs for specific routing:
-/ip firewall mangle add chain=prerouting dst-address-list=iran_ips action=mark-routing new-routing-mark=to_iran passthrough=no comment="Mark routing for traffic to Iran"
+ ``` /ip firewall mangle add chain=prerouting dst-address-list=iran_ips action=mark-routing new-routing-mark=to_iran passthrough=no comment="Mark routing for traffic to Iran" ```
 Example 3: Filter Rule to Allow Traffic
-Allow traffic from Iranian IPs while dropping others:
-/ip firewall filter add chain=forward src-address-list=iran_ips action=accept comment="Allow traffic from Iran"
+```Allow traffic from Iranian IPs while dropping others:
+/ip firewall filter add chain=forward src-address-list=iran_ips action=accept comment="Allow traffic from Iran" 
 /ip firewall filter add chain=forward action=drop comment="Drop all other traffic"
-Updating the IP Address List
+```
+Updating the IP Address List 
 IP ranges can change due to reallocation. To update the list:
 
 Visit ipdeny.com and download the latest ir.zone file.
 Rename it to iran_ip_list.txt and replace the existing file on your router or in the repository.
 Upload the updated iran_ip_list.txt to your router’s Files menu.
-Re-run the import command:
+```Re-run the import command: 
 /import file-name=import_iran_ips.rsc
+```
