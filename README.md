@@ -1,7 +1,5 @@
 # MikroTik-Iran-IP-List
-The MikroTik-Iran-IP-List repository simplifies the process of managing Iranian IP addresses in MikroTik routers. It provides an up-to-date IP list and an automated script, making it easy to integrate into firewall rules for packet marking, traffic routing, or filtering# MikroTik Address List for Iranian IP Addresses
-
-This repository provides a list of Iranian IP addresses and a script to import them into a MikroTik router's address list. The address list can be used in various firewall configurations, such as mangle rules for marking packets, routing decisions, or filtering traffic based on Iranian IP addresses.
+The MikroTik-Iran-IP-List repository simplifies the process of managing Iranian IP addresses in MikroTik routers. It provides an up-to-date IP list and an automated script, making it easy to integrate into firewall rules for packet marking, traffic routing, or filtering 
 
 ## Contents
 - **`iran_ip_list.txt`**: A text file containing Iranian IP ranges in CIDR notation.
