@@ -24,9 +24,9 @@ The IP address list for Iran was sourced from [ipdeny.com](http://www.ipdeny.com
 
 ### Step 2: Import the Address List
 1. Open the terminal in your MikroTik router (via Winbox, SSH, or the web interface).
-2. Run the following command to execute the script:
-3. /import file-name=import_iran_ips.rsc
-4. 3. The script will create an address list named `iran_ips` populated with the IP ranges from `iran_ip_list.txt`.
+2. Run the following command to execute the script:```
+ /import file-name=import_iran_ips.rsc ```
+4. The script will create an address list named `iran_ips` populated with the IP ranges from `iran_ip_list.txt`.
 
 ### Step 3: Use the Address List in Firewall Rules
 Once imported, the `iran_ips` address list can be referenced in firewall rules. Below are practical examples:
