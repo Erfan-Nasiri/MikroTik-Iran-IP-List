@@ -8,7 +8,7 @@ This repository provides a list of Iranian IP addresses and a script to import t
 - **`import_iran_ips.rsc`**: A script to import the IP list into a MikroTik address list named `iran_ips`.
 
 ## Source of IP Address List
-The IP address list for Iran was sourced from [ipdeny.com](http://www.ipdeny.com/ipblocks/data/countries/ir.zone) on [insert date]. IP ranges may change over time, so it’s recommended to update the list periodically.
+The IP address list for Iran was sourced from [ipdeny.com](http://www.ipdeny.com/ipblocks/data/countries/ir.zone) . IP ranges may change over time, so it’s recommended to update the list periodically.
 
 ## How to Use
 ### Prerequisites
