@@ -46,7 +46,7 @@ Example 3: Filter Rule to Allow Traffic
 Updating the IP Address List 
 IP ranges can change due to reallocation. To update the list:
 
-Visit  [ipdeny.com](http://www.ipdeny.com/ipblocks/data/countries/ir.zone) on [insert date] and download the latest ir.zone file.
+Visit  [ipdeny.com](http://www.ipdeny.com/ipblocks/data/countries/ir.zone)  and download the latest ir.zone file.
 Rename it to iran_ip_list.txt and replace the existing file on your router or in the repository.
 Upload the updated iran_ip_list.txt to your router’s Files menu.
 ```Re-run the import command: 
