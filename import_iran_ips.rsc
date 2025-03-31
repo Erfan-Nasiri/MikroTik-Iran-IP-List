@@ -16,3 +16,4 @@
         }
     } while ($position < $bufferSize)
 }
+
